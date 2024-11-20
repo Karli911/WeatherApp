@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js for charts -->
+    <script src="/static/js/script.js" defer></script> <!-- Your JavaScript -->
+</head>
+<body>
+    <h1>Weather App</h1>
+
+    <label for="city">Enter City:</label>
+    <input type="text" id="city" name="city">
+
+    <!-- Buttons for weather and forecast -->
+    <div>
+        <button id="getWeatherBtn">Get Weather</button>
+        <button id="getForecastBtn">Get Forecast</button>
+    </div>
+
+    <!-- Weather Information Section -->
+    <div id="weatherResult">
+        <h3>Current Weather</h3>
+        <p id="currentWeather"></p>  <!-- Updated ID to be unique -->
+    </div>
+
+    <!-- Forecast Information Section -->
+    <div id="forecastResult">
+        <h3>Weather Forecast</h3>
+        <canvas id="hourlyWeatherChart" width="400" height="200"></canvas>
+        <canvas id="dailyWeatherChart" width="400" height="200"></canvas>
+    </div>
+</body>
+</html>
